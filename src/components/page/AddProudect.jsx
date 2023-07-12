@@ -4,7 +4,7 @@ import { useState } from "react";
 const AddProudect = () => {
   const updatedata = () => {
     axios
-      .post("http://localhost:9000/products", {
+      .post("https://products-jtax.onrender.com/products", {
         title: title,
         price: price,
         stock: stock,

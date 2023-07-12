@@ -9,7 +9,7 @@ import { TbSquareRoundedMinus } from "react-icons/tb";
 
 const ProduitSelected = (props) => {
   const item = props;
-  const url = "http://localhost:9000/productSelect";
+  const url = "https://products-jtax.onrender.com/productSelect";
   const [quantity, setQuantity] = useState(1);
   const [tPrice, settPrice] = useState(item.price);
   const handelClickPlus = () => {

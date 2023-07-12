@@ -6,7 +6,7 @@ import { BsFillCreditCardFill } from "react-icons/bs";
 const CardShp = () => {
   const [data, setData] = useState([]);
   const fetchUserData = () => {
-    fetch("http://localhost:9000/productSelect")
+    fetch("https://products-jtax.onrender.com/productSelect")
       .then((response) => {
         return response.json();
       })

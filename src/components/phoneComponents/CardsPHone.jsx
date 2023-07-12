@@ -19,7 +19,7 @@ const CardsPHone = (props) => {
   let dataPhone = props;
   const updatedata = () => {
     axios
-      .post("http://localhost:9000/productSelect", {
+      .post("https://products-jtax.onrender.com/productSelect", {
         title: dataPhone.title,
         price: dataPhone.price,
         category: dataPhone.category,

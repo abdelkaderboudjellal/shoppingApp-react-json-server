@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const SingUp = () => {
   const navigate = useNavigate();
-  const url = "http://localhost:9000/user?email";
+  const url = "https://products-jtax.onrender.com/user?email";
   const [data, setData] = useState([]);
   const updatedata = () => {
     const data = getValues();
@@ -88,7 +88,7 @@ const SingUp = () => {
                 }, */
                 emailAvailable: async (fieldValue) => {
                   const response = await fetch(
-                    `http://localhost:9000/user?email=${fieldValue}`
+                    `https://products-jtax.onrender.com/user?email=${fieldValue}`
                   );
                   const data = await response.json();
                   return data.length === 0 || "Email already exists";

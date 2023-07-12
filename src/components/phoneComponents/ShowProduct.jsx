@@ -5,7 +5,7 @@ import Cards from "./CardsPHone";
 const ShowProduct = () => {
   const [data, setData] = useState([]);
   const fetchUserData = () => {
-    fetch("http://localhost:9000/products")
+    fetch("https://products-jtax.onrender.com/products")
       .then((response) => {
         return response.json();
       })

@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 
 const Login = () => {
   const navigate = useNavigate();
-  const url = "http://localhost:9000/user?email";
+  const url = "https://products-jtax.onrender.com/user?email";
   const [users, setUsers] = useState({});
   const {
     register,
@@ -18,7 +18,7 @@ const Login = () => {
     },
   });
   const data = () => {
-    const url1 = "http://localhost:9000/user";
+    const url1 = "https://products-jtax.onrender.com/user";
     fetch(`${url1}`)
       .then((res) => {
         return res.json();

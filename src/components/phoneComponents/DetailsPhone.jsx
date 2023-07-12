@@ -9,7 +9,7 @@ import { AiOutlineStar } from "react-icons/ai";
 const DetailsPhone = () => {
   const params = useParams();
   const [item, setItem] = useState({ images: [] });
-  const url = "http://localhost:9000/products";
+  const url = "https://products-jtax.onrender.com/products";
   const [image, setImage] = useState();
   useEffect(() => {
     fetch(`${url}/${params.prodectId}`)
@@ -23,7 +23,7 @@ const DetailsPhone = () => {
   }, [params]);
   const updatedata = () => {
     axios
-      .post("http://localhost:9000/productSelect", {
+      .post("https://products-jtax.onrender.com/productSelect", {
         title: item.title,
         price: item.price,
         rating: item.rating,
