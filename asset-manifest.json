@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/shoppingApp-react-json-server/static/css/main.b0ba1d5e.css",
+    "main.js": "/shoppingApp-react-json-server/static/js/main.e4ed83d5.js",
+    "static/media/revicons.eot": "/shoppingApp-react-json-server/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/shoppingApp-react-json-server/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/shoppingApp-react-json-server/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/shoppingApp-react-json-server/index.html",
+    "main.b0ba1d5e.css.map": "/shoppingApp-react-json-server/static/css/main.b0ba1d5e.css.map",
+    "main.e4ed83d5.js.map": "/shoppingApp-react-json-server/static/js/main.e4ed83d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0ba1d5e.css",
+    "static/js/main.e4ed83d5.js"
+  ]
+}
