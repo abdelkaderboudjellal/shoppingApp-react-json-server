@@ -40,7 +40,7 @@ const DetailsPhone = () => {
 
   return (
     <>
-      <div className=" w-full min-w-[520px]  items-center border rounded-3xl py-8">
+      <div className=" w-full   items-center border rounded-3xl py-8">
         <section className="text-gray-700 body-font overflow-hidden bg-white ">
           <div className="container px-5 py-24 mx-auto">
             <div className="lg:w-4/5 mx-auto flex flex-wrap">
@@ -138,11 +138,11 @@ const DetailsPhone = () => {
                   </button>
                 </div>
               </div>
-              <div className="flex   w-24 h-18">
+              <div className="grid py-4 grid-cols-2 sm:grid-cols-6 ">
                 <img
                   onClick={handelclik}
                   data-index={0}
-                  className="h-22 w-18 object-contain  mx-2 border border-gray-700 rounded-2xl"
+                  className="h-32 w-32   object-cover  mx-2 border border-gray-700 rounded-2xl"
                   src={item.images[0]}
                   alt=""
                   srcset=""
@@ -150,7 +150,7 @@ const DetailsPhone = () => {
                 <img
                   onClick={handelclik}
                   data-index={1}
-                  className="h-22 w-18 object-contain mx-2 border border-gray-700 rounded-2xl "
+                  className="h-32 w-32  object-cover mx-2 border border-gray-700 rounded-2xl "
                   src={item.images[1]}
                   alt=""
                   srcset=""
@@ -158,7 +158,7 @@ const DetailsPhone = () => {
                 <img
                   onClick={handelclik}
                   data-index={2}
-                  className="h-22 w-18 object-contain  mx-2 border border-gray-700 rounded-2xl"
+                  className="h-32 w-32  object-cover   mx-2 border border-gray-700 rounded-2xl"
                   src={item.images[2]}
                   alt=""
                   srcset=""
@@ -166,19 +166,21 @@ const DetailsPhone = () => {
                 <img
                   onClick={handelclik}
                   data-index={3}
-                  className="h-22 w-18 object-contain  mx-2 border border-gray-700 rounded-2xl"
+                  className="h-32 w-32  object-cover  mx-2 border border-gray-700 rounded-2xl"
                   src={item.images[3]}
                   alt=""
                   srcset=""
                 />
-                <img
-                  onClick={handelclik}
-                  data-index={4}
-                  className="h-22 w-18 object-contain  mx-2 border border-gray-700 rounded-2xl"
-                  src={item.images[4]}
-                  alt=""
-                  srcset=""
-                />
+                {item.images[4] &&
+                  <img
+                    onClick={handelclik}
+                    data-index={4}
+                    className="h-32 w-32 object-contain  mx-2 border border-gray-700 rounded-2xl"
+                    src={item.images[4]}
+                    alt=""
+                    srcset=""
+                  />
+                }
               </div>
             </div>
           </div>

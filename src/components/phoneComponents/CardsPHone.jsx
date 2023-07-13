@@ -62,7 +62,7 @@ const CardsPHone = (props) => {
             </p>
 
             <div class="group inline-block">
-              <button class="outline-none focus:outline-none   px-3 py-1  flex items-center min-w-32">
+              <button class="outline-none focus:outline-none   px-3 py-1  flex items-center ">
                 <span class="pr-1 font-semibold flex-1">
                   <CgMoreVerticalR
                     onClick={handlClick}
@@ -76,7 +76,7 @@ const CardsPHone = (props) => {
                 class={
                   !show
                     ? "hidden "
-                    : "bg-white border rounded-lg transform scale-100 absolute transition duration-150 ease-in-out origin-top w-24 -ml-16 min-w-32"
+                    : "bg-white border rounded-lg transform scale-100 absolute transition duration-150 ease-in-out origin-top w-24 -ml-16 "
                 }
               >
                 <button

@@ -14,19 +14,19 @@ const mystyle2 = {
 };
 const Contact = () => {
   return (
-    <div id="Contact" className="w-full min-w-[520px]">
-      <div className="container my-24 px-6 mx-auto">
-        <section className="mb-32 text-gray-800">
+    <div id="Contact" className="relative w-full  ">
+      <div className="sm:container flex justify-center items-center h-screen  px-6 mx-auto">
+        <section className="mb-32  w-full text-gray-800 ">
           <div
             className="relative overflow-hidden bg-no-repeat bg-cover"
             style={mystyle1}
           ></div>
-          <div className="container text-gray-800 px-4 md:px-12">
+          <div className="sm:container text-gray-800 px-4 md:px-12">
             <div
               className="block rounded-lg shadow-lg py-10 md:py-12 px-4 md:px-6"
               style={mystyle2}
             >
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 mb-12">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 mb-12">
                 <div className="mb-12 lg:mb-0 text-center mx-auto">
                   <svg
                     className="w-8 h-8  text-gray-900 mb-6 mx-auto"

@@ -23,13 +23,9 @@ const Navbar = () => {
     <>
       <nav
         id="header"
-        className="hidden  relative min-w-[520px] w-[100%] z-10  md:block"
+        className="hidden  relative  w-[100%] z-10  md:block"
       >
-        <div className="flex  justify-between  md:w-[90%] md:mx-[5%]  h-14 py-12 md:px-[4%] items-center min-w-[420px] w-[100%]  ">
-          {/*           <div className="md:0 ml-24 group flex items-center">
-            <SiAppstore className="group-hover:text-red-600" size={28} />
-            <h1 className="text-lg font-bold group-hover:text-red-600 ">EK</h1>
-          </div> */}
+        <div className="flex  justify-between  md:w-[90%] md:mx-[5%]  h-14 py-12 md:px-[4%] items-center  w-[100%]  ">
           <div className="">
             <Link
               className="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl "
@@ -51,9 +47,6 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
-              {/*               <button className="bg-transparent flex items-center cursor-pointer border border-[#9c1524] transition-colors duration-300 ease-out rounded-xl px-4 hover:text-[#fff] hover:bg-[#9c1524]  text-[#9c1524] ">
-                <span className="m-2.5">Login</span>
-              </button> */}
             </ul>
           </div>
           <div className=" flex items-center" id="nav-content">
@@ -73,13 +66,13 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className="w-[100%] py-4 absolute min-w-[520px]   z-10 block md:hidden">
+      <div className="fixed bg-[#ffffffb4] w-[100%] py-4     z-10 block md:hidden">
         <div className="flex justify-between z-20   ">
           <div
             className={
               outlin
                 ? "md:0 ml-2 group flex items-center z-50"
-                : "md:0 ml-2 group flex items-center z-50 text-black"
+                : " md:0 ml-2 group flex items-center z-50 text-black"
             }
           >
             <HiShoppingBag className="group-hover:text-orange-500" />
@@ -92,13 +85,13 @@ const Navbar = () => {
             className={
               outlin
                 ? " hidden"
-                : "  fixed  bg-[#f5f0f0ea] pt-48 -z-10 -mt-24  h-[26000px] min-w-[420px] w-[100%]   items-center  flex flex-col  font-medium  text-center "
+                : "  fixed  bg-[#f5f0f0ea] pt-48 -z-10 -mt-24  h-[26000px]  w-[100%]   items-center  flex flex-col  font-medium  text-center "
             }
           >
             {listname.map((list) => (
               <li
                 key={list.id}
-                className=" py-4 text-xl  border-t border-black z-10 w-[90%]  hover:text-[#F87171] text-black"
+                className=" py-4  text-xl  border-t border-black z-10 w-[90%]  hover:text-[#F87171] text-black"
               >
                 <Link className=" px-4" to={list.path}>
                   {list.name}
@@ -106,9 +99,12 @@ const Navbar = () => {
               </li>
             ))}
             <div className="w-[90%]  border-t">
-              <button className=" w-full uppercase text-black tet-xl border-2 border-black my-4 py-2 rounded-md hover:text-white hover:bg-black ">
+              <Link
+                to="/LoginPage"
+                className=" w-full uppercase text-black tet-xl border-2 border-black my-4 px-2 py-2 rounded-md hover:text-white hover:bg-black "
+              >
                 login
-              </button>
+              </Link>
             </div>
             <div
               className={

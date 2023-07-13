@@ -23,13 +23,18 @@ const ShowProduct = () => {
       slidesToSlide: 3, // optional, default to 1.
     },
     desktop1: {
-      breakpoint: { max: 1800, min: 1024 },
+      breakpoint: { max: 1800, min: 1400 },
       items: 4,
+      slidesToSlide: 3, // optional, default to 1.
+    },
+    desktop2: {
+      breakpoint: { max: 1400, min: 1024 },
+      items: 3,
       slidesToSlide: 3, // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 790 },
-      items: 3,
+      items: 2,
       slidesToSlide: 2, // optional, default to 1.
     },
     mobile: {
@@ -39,11 +44,11 @@ const ShowProduct = () => {
     },
   };
   return (
-    <div className="h-[400px]  px-[5%] grid grid-cols-1 cursor-pointer bg-[#0f0f0f32]">
+    <div className="h-[400px]  md:px-[5%] grid grid-cols-1 cursor-pointer bg-[#0f0f0f32]">
       <Carousel responsive={responsive}>
         {data.map((item) => {
           return (
-            <div key={item.id} className="w-48">
+            <div key={item.id} className="block mx-2">
               <Cards
                 id={item.id}
                 title={item.title}

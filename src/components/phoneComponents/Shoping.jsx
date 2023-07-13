@@ -9,18 +9,18 @@ const Shoping = () => {
   return (
     <div
       id="Shopping"
-      className=" md:flex   min-h-[900px] min-w-[520px] w-full pt-12 md:pt-0 "
+      className=" md:flex   min-h-[900px]  w-full pt-12 md:pt-0 "
     >
       
-      <div className="w-full md:w-1/4 border-r col-span-1  rounded-3xl bg-[#c5bfbf31] mt-24 min-w-[520px]">
-        <h1 className=" font-bold text-gray-700 text-xl p-2 w-full min-w-[520px]">
+      <div className="w-full min-w-[300px] md:w-1/4 border-r col-span-1  rounded-3xl bg-[#c5bfbf31] mt-24 ">
+        <h1 className=" font-bold text-gray-700 text-xl p-2 w-full ">
           My Cart
         </h1>
-        <div className="w-full ">
+        <div className="w-full  ">
           <CardShp />
         </div>
       </div>
-      <div className="w-full md:w-3/4 border-l md:grid-cols-2 xl:col-span-4  min-w-[520px] ">
+      <div className="w-full md:w-3/4 border-l md:grid-cols-2 xl:col-span-4  ">
         <FillterShop />
       </div>
     </div>

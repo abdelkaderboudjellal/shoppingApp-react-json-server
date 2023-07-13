@@ -14,7 +14,7 @@ const CardShp = () => {
         setData(datas);
       });
   };
-  /*  const[totalAmount,setTotalAmount]=useState(0) */
+
   let totalAmount = 0;
   let Total = 0;
   let Subtotal = 0;
@@ -23,11 +23,11 @@ const CardShp = () => {
 
   useEffect(() => {
     fetchUserData();
-    /* setTotalAmount() */
+
   }, [data]);
   return (
     <>
-      <div className="overflow-x-auto shadow-md sm:rounded-lg min-w-[420px] w-full">
+      <div className="overflow-x-auto shadow-md sm:rounded-lg  w-full">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 text-center">
             <tr>

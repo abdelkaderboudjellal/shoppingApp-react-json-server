@@ -22,7 +22,7 @@ const About = () => {
   return (
     <div
       id="About"
-      className="relative min-w-[520px] h-[620px] mx-auto bg-white "
+      className="relative  h-[220px] sm:h-[620px] mx-auto bg-white "
     >
       <div className="absolute inset-0 w-full h-full">
         <img
@@ -39,7 +39,7 @@ const About = () => {
           onClick={handlePreviousImage}
           className="text-white focus:outline-none"
         >
-          <IoIosArrowDropleftCircle size={48} className="hover:text-red-800" />
+          <IoIosArrowDropleftCircle size={35} className="hover:text-red-800" />
         </button>
       </div>
       <div className="absolute inset-y-0 right-0 flex items-center justify-center w-16">
@@ -47,7 +47,7 @@ const About = () => {
           onClick={handleNextImage}
           className="text-white focus:outline-none"
         >
-          <AiFillRightCircle size={48} className="hover:text-red-800" />
+          <AiFillRightCircle size={35} className="hover:text-red-800" />
         </button>
       </div>
       <div className="absolute -bottom-10 left-0 right-0 pb-12">

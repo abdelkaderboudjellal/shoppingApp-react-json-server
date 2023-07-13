@@ -13,7 +13,7 @@ const Footer = () => {
     { id: 3, name: "CONTACT", path: "/CONTACT" },
   ];
   return (
-    <div className="bg-[#000000] text-white py-14 px-8 min-w-[520px] w-[100%]">
+    <div className="bg-[#000000] text-white py-14 px-8  w-[100%]  ">
       <div className="flex justify-between">
         <div className=" md:flex md:items-center ">
           <div className="">
@@ -38,7 +38,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="flex  items-center  ">
+        <div className="flex flex-col  md:flex-row space-y-3 md:space-y-0 md:space-x-3  items-center  ">
           <div className="px-4">
             <BsFacebook className=" text-white hover:text-[#2c8eca]" />
           </div>

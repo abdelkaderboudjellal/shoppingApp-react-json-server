@@ -9,9 +9,9 @@ const FillterShop = () => {
   };
 
   return (
-    <div className="min-w-[420px] pt-2 pl-4 w-[100%]">
+    <div className=" pt-2 pl-4 w-[100%]">
       <div className="flex w-3/6  my-8 md:ml-[10%]">
-        <div className="w-1/3 min-w-[320px] md:w-2/6 xl:w-1/6  flex space-x-4">
+        <div className="w-1/3  md:w-2/6 xl:w-1/6  flex space-x-4">
           <select
             onChange={handelSelect}
             id="mySelect"
