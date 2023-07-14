@@ -61,9 +61,9 @@ const CardsPHone = (props) => {
               {dataPhone.title}
             </p>
 
-            <div class="group inline-block">
-              <button class="outline-none focus:outline-none   px-3 py-1  flex items-center ">
-                <span class="pr-1 font-semibold flex-1">
+            <div className="group inline-block">
+              <button className="outline-none focus:outline-none   px-3 py-1  flex items-center ">
+                <span className="pr-1 font-semibold flex-1">
                   <CgMoreVerticalR
                     onClick={handlClick}
                     className=" text-gray-700"
@@ -73,26 +73,20 @@ const CardsPHone = (props) => {
                 <span></span>
               </button>
               <ul
-                class={
+                className={
                   !show
                     ? "hidden "
                     : "bg-white border rounded-lg transform scale-100 absolute transition duration-150 ease-in-out origin-top w-24 -ml-16 "
                 }
               >
                 <button
-                  class="rounded-sm  px-3 py-1 hover:bg-gray-100 text-sm"
+                  className="rounded-sm  px-3 py-1 hover:bg-gray-100 text-sm"
                   onClick={() => {
                     navigate(`/Shopping/${dataPhone.id}`);
                   }}
                 >
                   Show more
                 </button>
-                {/*   <Link
-                  class="rounded-sm  px-3 py-1 hover:bg-gray-100 text-sm"
-                  to={`/Shopping/${dataPhone.id}`}
-                >
-                  Show more
-                </Link> */}
               </ul>
             </div>
           </div>
@@ -105,7 +99,7 @@ const CardsPHone = (props) => {
               {dataPhone.brand}
             </h1>
           </div>
-          {/* <p className="  text-left text-sm text-gray-700 ">{props.description}</p> */}
+          
           <div className="text-yellow-600 flex justify-center items-center dark:text-yellow-400">
             <svg
               width="24"

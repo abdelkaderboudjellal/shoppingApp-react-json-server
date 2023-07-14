@@ -46,7 +46,7 @@ const DetailsPhone = () => {
             <div className="lg:w-4/5 mx-auto flex flex-wrap">
               <img
                 alt="ecommerce"
-                class="lg:w-1/2 w-ful object-cover object-center rounded-xl border-2 "
+                className="lg:w-1/2 w-ful object-cover object-center rounded-xl border-2 "
                 src={image}
               />
               <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
@@ -72,9 +72,9 @@ const DetailsPhone = () => {
                     <a className="text-gray-500">
                       <svg
                         fill="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         className="w-5 h-5"
                         viewBox="0 0 24 24"
                       >
@@ -84,9 +84,9 @@ const DetailsPhone = () => {
                     <a className="ml-2 text-gray-500">
                       <svg
                         fill="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         className="w-5 h-5"
                         viewBox="0 0 24 24"
                       >
@@ -96,9 +96,9 @@ const DetailsPhone = () => {
                     <a className="ml-2 text-gray-500">
                       <svg
                         fill="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         className="w-5 h-5"
                         viewBox="0 0 24 24"
                       >
@@ -107,24 +107,24 @@ const DetailsPhone = () => {
                     </a>
                   </span>
                 </div>
-                <p class="leading-relaxed">{item.description}</p>
-                <div class="flex-col ml-6 items-center h-24">
-                  <div class="relative flex  justify-around items-center">
+                <p className="leading-relaxed">{item.description}</p>
+                <div className="flex-col ml-6 items-center h-24">
+                  <div className="relative flex  justify-around items-center">
                     <h1 className="text-lg font-medium pt-12 text-gray-700">
                       {item.brand}
                     </h1>
                   </div>
                 </div>
-                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
-                  <div class="flex">
-                    <span class="mr-3">Color</span>
+                <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
+                  <div className="flex">
+                    <span className="mr-3">Color</span>
                     <IoIosColorFill size={28} className="text-green-600" />
                     <IoIosColorFill size={28} className="text-gray-600" />
                     <IoIosColorFill size={28} className="text-red-600" />
                   </div>
                 </div>
-                <div class="flex">
-                  <span class="title-font font-medium text-2xl text-gray-900">
+                <div className="flex">
+                  <span className="title-font font-medium text-2xl text-gray-900">
                     {item.price * 200}DA
                   </span>
                   <h1 className="ml-auto  text-lg font-medium text-gray-400">
@@ -132,55 +132,26 @@ const DetailsPhone = () => {
                   </h1>
                   <button
                     onClick={updatedata}
-                    class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded"
+                    className="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded"
                   >
                     buy
                   </button>
                 </div>
               </div>
               <div className="grid py-4 grid-cols-2 sm:grid-cols-6 ">
-                <img
-                  onClick={handelclik}
-                  data-index={0}
-                  className="h-32 w-32   object-cover  mx-2 border border-gray-700 rounded-2xl"
-                  src={item.images[0]}
-                  alt=""
-                  srcset=""
-                />
-                <img
-                  onClick={handelclik}
-                  data-index={1}
-                  className="h-32 w-32  object-cover mx-2 border border-gray-700 rounded-2xl "
-                  src={item.images[1]}
-                  alt=""
-                  srcset=""
-                />
-                <img
-                  onClick={handelclik}
-                  data-index={2}
-                  className="h-32 w-32  object-cover   mx-2 border border-gray-700 rounded-2xl"
-                  src={item.images[2]}
-                  alt=""
-                  srcset=""
-                />
-                <img
-                  onClick={handelclik}
-                  data-index={3}
-                  className="h-32 w-32  object-cover  mx-2 border border-gray-700 rounded-2xl"
-                  src={item.images[3]}
-                  alt=""
-                  srcset=""
-                />
-                {item.images[4] &&
-                  <img
-                    onClick={handelclik}
-                    data-index={4}
-                    className="h-32 w-32 object-contain  mx-2 border border-gray-700 rounded-2xl"
-                    src={item.images[4]}
-                    alt=""
-                    srcset=""
-                  />
-                }
+                {item.images.map((image) => {
+                  return (
+                    <img
+                      key={item.images.indexOf(image)}
+                      onClick={handelclik}
+                      data-index={item.images.indexOf(image)}
+                      className="h-32 w-32   object-cover  mx-2 border border-gray-700 rounded-2xl"
+                      src={image}
+                      alt=""
+                      srcSet=""
+                    />
+                  );
+                })}
               </div>
             </div>
           </div>

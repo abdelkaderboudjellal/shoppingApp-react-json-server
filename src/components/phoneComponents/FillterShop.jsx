@@ -17,15 +17,15 @@ const FillterShop = () => {
             id="mySelect"
             className="bg-gray-50  text-gray-900 text-sm   focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-100 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
           >
-            <option selected value="">
+            <option defaultValue value="">
               All category 
             </option>
-            <option  defaultValue="smartphones">smartphones</option>
-            <option defaultValue="laptops">laptops</option>
-            <option defaultValue="fragrances">fragrances</option>
-            <option defaultValue="skincare">skincare</option>
-            <option defaultValue="groceries">groceries</option>
-            <option defaultValue="home-decoration">home-decoration</option>
+            <option  value="smartphones">smartphones</option>
+            <option value="laptops">laptops</option>
+            <option value="fragrances">fragrances</option>
+            <option value="skincare">skincare</option>
+            <option value="groceries">groceries</option>
+            <option value="home-decoration">home-decoration</option>
             <option value="sold">Sale</option>
           </select>
         </div>
